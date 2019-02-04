@@ -1,0 +1,9 @@
+{
+	"environments": ["node"]
+	, "functionalSuites": "tests/functional/**/*.js"
+	, "suites": "tests/unit/**/*.js"
+	, "plugins": [
+		"tests/plugins/globals.js"
+	]
+	// , "grep": "status"
+}
