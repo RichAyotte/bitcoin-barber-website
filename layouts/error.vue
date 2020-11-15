@@ -31,15 +31,18 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.container
-	margin 5vh auto
-	text-align center
+<style lang="scss" scoped>
+.container {
+	margin: 5vh auto;
+	text-align: center;
+}
 
-h1
-	margin: 5vh
+h1 {
+	margin: 5vh;
+}
 
-.logo
-	width 80vw
-	max-width 300px
+.logo {
+	width: 80vw;
+	max-width: 300px;
+}
 </style>

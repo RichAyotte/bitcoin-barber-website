@@ -227,9 +227,10 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-@import '~assets/style/theme.styl'
+<style lang="scss" scoped>
+// @import '~assets/style/theme.scss';
 
-.menu-top-bar
-	background-color: $grey.lighten-3
+.menu-top-bar {
+	// background-color: $grey.lighten-3
+}
 </style>

@@ -1,7 +1,7 @@
 const config = require('config')
 const nodeExternals = require('webpack-node-externals')
 const rucksackCss = require('rucksack-css')
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+// const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 const pkg = require('./package')
 
@@ -86,15 +86,11 @@ module.exports = {
 	** Plugins to load before mounting the App
 	*/
 	, plugins: [
-		'@/plugins/vuetify'
+		// '@/plugins/vuetify'
 	]
-
-	/*
-	** Nuxt.js modules
-	*/
-	, modules: [
-		// Doc: https://github.com/nuxt-community/axios-module#usage
-		'@nuxtjs/axios'
+	, buildModules: [
+		'@nuxtjs/vuetify'
+		, '@nuxtjs/axios'
 	]
 
 	/**
@@ -111,10 +107,13 @@ module.exports = {
 	 */
 	, css: [
 		{
-			lang: 'stylus'
-			, src: 'assets/style/app.styl'
+			lang: 'sass'
+			, src: 'assets/style/app.scss'
 		}
 	]
+	, vuetify: {
+		customVariables: ['~/assets/style/variables.scss']
+	}
 
 	/*
 	 ** Build configuration
@@ -136,13 +135,13 @@ module.exports = {
 				})
 			}
 
-			if (process.server) {
-				wpConfig.externals = [
-					nodeExternals({
-						whitelist: [/^vuetify/]
-					})
-				]
-			}
+			// if (process.server) {
+			// 	wpConfig.externals = [
+			// 		nodeExternals({
+			// 			whitelist: [/^vuetify/]
+			// 		})
+			// 	]
+			// }
 		}
 		, optimizeCSS: true
 		, parallel: true
@@ -163,8 +162,8 @@ module.exports = {
 			}
 		}
 		, transpile: [/^vuetify/]
-		, plugins: [
-			new VuetifyLoaderPlugin()
-		]
+		// , plugins: [
+		// 	new VuetifyLoaderPlugin()
+		// ]
 	}
 }

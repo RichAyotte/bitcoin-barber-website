@@ -3,7 +3,7 @@
 
 ## Tools
 - [Vue](<https://vuejs.org/>)
-- [Stylus](<http://stylus-lang.com/>)
+- [SASS](<https://sass-lang.com/>)
 - [Vuetify](<https://vuetifyjs.com/>)
 - [Babel](<https://babeljs.io/>)
 - [Koa](<https://koajs.com/>)

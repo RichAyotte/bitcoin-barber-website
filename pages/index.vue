@@ -21,27 +21,32 @@
 </div>
 </template>
 
-<style lang="stylus" scoped>
-@import '~assets/style/theme.styl'
+<style lang="scss" scoped>
+// @import '~assets/style/variables.scss';
 
-.logo
-	display: block
-	margin: 2vh auto
-	max-width: 400px
-	width: 40vmin
+.logo {
+	display: block;
+	margin: 2vh auto;
+	max-width: 400px;
+	width: 40vmin;
+}
 
-h2
-	text-align: center
-	margin: 2vh auto
+h2 {
+	text-align: center;
+	margin: 2vh auto;
+}
 
-.buttons-container
-	margin: 0 auto
-	text-align: center
-	width: 100%
+.buttons-container{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
 
-.announce
-	border: 1px solid $theme.primary
-	margin: 2vh auto
-	max-width: 500px
-	padding: 28px
+.announce{
+	// border: 1px solid $theme.primary;
+	border: 1px solid red;
+	margin: 2vh auto;
+	max-width: 500px;
+	padding: 28px;
+}
 </style>

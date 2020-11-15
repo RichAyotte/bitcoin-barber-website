@@ -13,7 +13,8 @@
 					class="ma-0"
 					:type="statusType"
 					:value="true"
-				>{{statusOrPrice}}</v-alert>
+				>{{statusOrPrice}}
+				</v-alert>
 				<v-img
 					:src="require('~/assets/images/the-head-shop.jpg')"
 					height="230px"
@@ -29,14 +30,14 @@
 					<v-btn
 						class="primary--text"
 						flat
-						tag
 						href="http://www.theheadshop.ca/"
+						tag
 					>Website</v-btn>
 					<v-btn
 						class="primary--text"
 						flat
-						tag
 						href="https://www.google.ca/maps/dir//20+Hartzel+Rd,+St.+Catharines"
+						tag
 					>Directions</v-btn>
 				</v-card-actions>
 			</v-card>
@@ -123,6 +124,9 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-@import '~assets/style/theme.styl'
+<!-- <style lang="scss" scoped>
+@import '~assets/style/theme.scss';
 </style>
+ -->
+
+

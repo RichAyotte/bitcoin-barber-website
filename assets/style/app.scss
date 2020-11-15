@@ -1,0 +1,27 @@
+// @import "./variables.scss";
+// @import "~vuetify/src/sass/app";
+
+// .page {
+// 	@extend .fade-transition;
+// }
+
+@font-face {
+	font-family: "Arvo";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Arvo"),
+		url("//fonts.gstatic.com/s/arvo/v8/J0GYVYTizO1mjpT3aOcSbQ.woff2")
+			format("woff2");
+}
+
+*:not(.material-icons) {
+	font-family: "Arvo";
+}
+
+h1 {
+	text-align: center;
+}
+
+html {
+	font-size: 16px !important;
+}

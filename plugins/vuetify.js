@@ -1,7 +1,8 @@
+
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
 
-import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/lib/util/colors'
 
 Vue.use(Vuetify, {
 	theme: {
@@ -15,3 +16,4 @@ Vue.use(Vuetify, {
 		, success: colors.green.accent3
 	}
 })
+
