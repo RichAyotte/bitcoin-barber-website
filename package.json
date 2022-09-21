@@ -26,7 +26,7 @@
     "nuxt": "^2.14.7",
     "nuxt-start": "^2.14.7",
     "rucksack-css": "^1.0.2",
-    "vuetify": "^2.2.11"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2",
